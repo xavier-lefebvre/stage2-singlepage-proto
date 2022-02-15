@@ -16,7 +16,7 @@
 
 /*Select  */
 [aria-hidden="true"] {
-  opacity: 0.2;
+  opacity: 40%;
   overflow-x: hidden;
 }
 
