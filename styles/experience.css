@@ -1,0 +1,200 @@
+.experiences {
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    /* justify-content: space-between ; */
+    height: 100%;
+    width: 100%;
+    
+  }
+  
+.titre-experience {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+.titre-experience .row h1 {
+    align-self: flex-end;
+    font-weight: lighter;
+    padding: 0 0.5rem 2rem 0.5rem;
+    width: 100%
+    
+  }
+  
+.titre-experience .row h1 span {
+    font-weight: bold;
+  }
+  
+.titre-experience .row img {
+    padding: 0 0.5rem 1rem 0.5rem;
+  }
+  
+/*Chaque formule contient : 
+une photo d'un plat, 
+le descriptif de la formule
+les details
+un bouton d'ajout au panier*/
+  
+.formule {
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 2rem 0;
+    padding: 1rem 0 1rem 0;
+    
+}
+  
+.formule-description {
+    display: flex;
+    flex-direction: column;
+}
+  
+.formule-description .row img {
+  width: 100%;
+  object-fit: cover;
+  margin: 0 auto 2rem auto;
+}
+  
+.formule-text {
+  margin-bottom: 2rem;
+  text-align: start;
+}
+  
+.formule-text h2 {
+  padding: 0 0 0.5rem 0;
+}
+  
+.formule-text h2 span {
+  font-weight: lighter;
+  font-size: 13px;
+}
+  
+.formule-text h2 span i {
+  color: #ff1d67;
+  padding: 0;
+  margin: 0;
+}
+  
+.formule-text ul {
+  list-style-position: inside;
+  margin-bottom: 3.7rem;
+   
+}
+  
+.formule-text i {
+  padding: 0 1rem 0 0;
+  color: black;
+  font-size: larger;
+}
+  
+.formule-text a, ul > li span {
+  color: #868686;
+}
+  
+  
+.ajout-box {
+    text-align: center;
+    width: 25rem;
+    display: flex;
+}
+  
+.ajout-box p, h2 {
+    padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+}
+  
+.ajout-box h2:nth-of-type(2) {
+    color: #ff1d67;
+}
+  
+.ajout-box button {
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #ff1d67;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    border-style: none;
+    width: 100%;
+    margin-top: 0.5rem
+}
+
+/*small device */
+@media only screen and (max-width: 400px) {
+    .formule-description .row img {
+    margin: 0;
+      
+    }
+    .formule {
+      max-width: 320px;
+      margin: 0 auto;
+    }
+    .ajout-box {
+    justify-content: center;
+    align-items: center;
+    }
+    .ajout-box button {
+      width: 75%;
+    }
+  }
+  
+  /* mobile */
+@media only screen and (max-width: 767px) {
+    .titre-experience .row h1 {
+      font-size: 28px;
+    }
+}
+  
+  /* Tablette */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .titre-experience .row h1 {
+      font-size: 30px;
+      
+    }
+}
+  
+  /* Desktop */
+@media only screen and ( min-width: 1025px ) {
+    .experiences {
+      justify-content:space-between;
+    }
+  
+    .titre-experience .row img {
+      padding: 0 0.5rem 1rem 0.5rem;
+      height: 100%;
+      width: auto;
+      max-width: 20rem;
+    }
+  
+    .formule {
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 0;
+      align-items: flex-start;
+    }
+  
+    .formule-description {
+      flex-direction: row;
+    }
+  
+    .formule-text {
+      margin: 0 0 0 3rem;
+    }
+  
+    .ajout-box {
+      width: auto;
+      margin: 0 0 0 9rem;
+      padding-right: 1rem;;
+    }
+  
+    .ajout-box button {
+      font-size: 13px;
+      margin: 0 1rem 0 0;
+    }
+    
+    .ajout-box p, h2 {
+      width: 100%;
+      padding-bottom: 0.3rem;
+    }
+}

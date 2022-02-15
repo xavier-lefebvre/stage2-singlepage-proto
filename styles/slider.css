@@ -1,0 +1,98 @@
+.img-div {
+    width: 100%;
+    background: black center no-repeat;
+    background-size: cover;
+}
+
+.slick-active  {
+    opacity: 1;
+    overflow-x: hidden;
+}
+
+.section:first-of-type {
+    background: black center no-repeat;
+    background-size: cover;
+}
+
+[aria-hidden="true"] {
+    opacity: 0.2;
+    overflow-x: hidden;
+}
+
+/* Settings : slick distant css*/
+
+/* Arrows */
+.slick-prev::before, .slick-next::before {
+    color: #f1f1f1;
+    font-size: 50px;
+    opacity: 1;
+    text-shadow: 1px 1px 1px gray;
+}
+
+.slick-prev {
+    left: 25px;
+    z-index: 6;
+    
+}
+
+.slick-next {
+    right: 25px;
+    z-index: 6;
+    
+}
+
+/* Remove chevron in map location*/
+p .fa-chevron-right::before {
+    display: none;
+}
+
+.slick-prev::before {
+    content: "⟨";
+
+}
+
+.slick-next::before{
+    content: "⟩";
+}
+
+/* Dots on mobile */
+.slick-dots {
+    padding: 50px 0 50px 0;
+    color: white;
+}
+
+.slick-dots li button::before {
+    opacity: .9;
+    color: white;
+    font-size: 10px;
+    position: initial;
+}
+
+
+/*small device */
+@media only screen and (max-width: 400px) {
+    
+    
+}
+ 
+
+/* mobile */
+@media only screen and (max-width: 767px) {
+    .img-div img {
+        width: 100%;
+    }
+    
+    .slick-prev::before, .slick-next::before {
+        display: none;
+    }
+}
+
+/* Tablette */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+
+/* Desktop */
+@media only screen and ( min-width: 1025px ) {
+}
