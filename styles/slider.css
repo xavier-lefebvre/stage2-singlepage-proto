@@ -14,6 +14,7 @@
   background-size: cover;
 }
 
+/*Select  */
 [aria-hidden="true"] {
   opacity: 0.2;
   overflow-x: hidden;
@@ -75,6 +76,10 @@ p .fa-chevron-right::before {
 @media only screen and (max-width: 767px) {
   .img-div img {
     width: 100%;
+  }
+
+  [aria-hidden="true"] {
+    opacity: 1;
   }
 
   .slick-prev::before,
